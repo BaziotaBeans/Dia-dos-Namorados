@@ -1,0 +1,48 @@
+body{
+    background-color: #222;
+}
+
+section {display: flex; justify-items: center; justify-content: center; align-items: center;
+    flex-direction: column;
+}
+h1{color: white; font-size: 35px; font-family: 'Love Ya Like A Sister', cursive;}
+h3{color: white; font-size: 20px; font-family: 'Love Ya Like A Sister', cursive;}
+.heart {
+    margin: 200px 100px 100px 100px;
+    background-color: red;
+    height: 200px;
+    transform: rotate(-45deg);
+    width: 200px;
+    position: relative;
+    box-shadow: -1px 2px 29PX 3PX purple;
+}
+
+.heart:before,
+.heart:after {
+    content: "";
+    background-color: red;
+    border-radius: 50%;
+    height: 200px;
+    position: absolute;
+    width: 200px;
+}
+.heart::before{box-shadow: 2px -20px 20PX 2PX #800080;}
+
+
+.heart::after{box-shadow: 28px 4px 18PX 0PX purple;}
+.heart:before {
+    top: -100px;
+}
+
+.heart:after {
+    left: 100px;
+}
+
+.cupido
+{
+    transform:rotate(20deg);
+    position: absolute; left: 20px;
+    
+}
+img{width: 200px; height: 200px;  }
+.frases{margin: 0 auto; text-align: center;}
